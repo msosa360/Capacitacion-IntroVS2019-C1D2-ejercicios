@@ -5,7 +5,7 @@
         static int findMin(int[] arr)
         {
             int min = arr[1];
-            for (int i = 0; i < arr.Length; i++)
+            for (int i = 1; i < arr.Length; i++)
             {
                 int current = arr[i + 1];
                 if (min < current)
