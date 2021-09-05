@@ -1,14 +1,16 @@
-﻿namespace Ejercicio_1
+﻿using System;
+
+namespace Ejercicio_1
 {
     class Program
     {
         static int findMin(int[] arr)
         {
-            int min = arr[1];
+            int min = arr[0];
             for (int i = 0; i < arr.Length; i++)
             {
-                int current = arr[i + 1];
-                if (min < current)
+                int current = arr[i];
+                if (min > current)
                 {
                     min = current;
                 }
@@ -19,7 +21,7 @@
         static void Main(string[] args)
         {
             int[] numbers = { 1, 8, 20, 2, 3 };
-            integer min = findMin(numbers);
+            int min = findMin(numbers);
             Console.WriteLine(min);
         }
     }
