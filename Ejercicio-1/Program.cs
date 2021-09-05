@@ -4,15 +4,15 @@ namespace Ejercicio_1
 {
     class Program
     {
-        static int findMin(int[] arr)
+        static int buscarMinimo(int[] arr)
         {
             int min = arr[0];
             for (int i = 0; i < arr.Length; i++)
             {
-                int current = arr[i];
-                if (min > current)
+                int actual = arr[i];
+                if (min > actual)
                 {
-                    min = current;
+                    min = actual;
                 }
             }
             return min;
@@ -20,8 +20,8 @@ namespace Ejercicio_1
 
         static void Main(string[] args)
         {
-            int[] numbers = { 1, 8, 20, 2, 3 };
-            int min = findMin(numbers);
+            int[] numeros = { 1, 8, 20, 2, 3 };
+            int min = buscarMinimo(numeros);
             Console.WriteLine(min);
         }
     }
