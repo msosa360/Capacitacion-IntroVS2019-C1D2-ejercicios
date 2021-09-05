@@ -2,15 +2,15 @@
 {
     class Program
     {
-        static int findMin(int[] arr)
+        static int buscarMinimo(int[] arr)
         {
             int min = arr[1];
             for (int i = 1; i < arr.Length; i++)
             {
-                int current = arr[i + 1];
-                if (min < current)
+                int actual = arr[i + 1];
+                if (min < actual)
                 {
-                    min = current;
+                    min = actual;
                 }
             }
             return min;
@@ -18,8 +18,8 @@
 
         static void Main(string[] args)
         {
-            int[] numbers = { 1, 8, 20, 2, 3 };
-            integer min = findMin(numbers);
+            int[] numeros = { 1, 8, 20, 2, 3 };
+            integer min = buscarMinimo(numeros);
             Console.WriteLine(min);
         }
     }
