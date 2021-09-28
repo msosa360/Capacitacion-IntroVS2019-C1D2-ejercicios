@@ -5,5 +5,5 @@ pero con algunas condiciones:
 3) Si el número es múltiplo de 15: en vez del número, imprimir: "DIVISIBLE POR 15"
 
 HINT: 
-En C% se puede utilizar la siguiente forma para determinar si un número es múltiplo de otro:
+En C# se puede utilizar la siguiente forma para determinar si un número es múltiplo de otro:
 i % x = 0, si y solo si, i es múltiplo de x
